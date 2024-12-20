@@ -1,0 +1,271 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner{
+    width: 100%;
+    height: 50vh;
+    min-height: 180px;
+    background-image: url('images/avengersbanner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+@media (max-width: 768px){
+    #banner{
+        height: 30vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #banner {
+        height: 25vh;
+    }
+}
+
+#banner-container{
+    position: relative;
+    width: 100%;
+}
+
+#menu{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#menu a{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+@media (max-width: 768px){
+    #menu{
+        bottom: 5px;
+        padding: 5px 10px
+    }
+    #menu a{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+#menu a:hover{
+    box-shadow: 0 0 25px 10px #ff000080;
+    color: black;
+    background-color: #ff000080;
+    text-shadow: #000000;
+    transition: 1s;
+}
+
+.gallery img{
+    width: 100%;
+    display: block;
+}
+
+h1, h2{
+    font-family:Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 1000;
+    color: #ffffff;
+    background-color: #8b0000;
+}
+
+h2{
+    font-size: 21px;
+    color: #8b0000;
+    background-color:black;
+    text-decoration: underline;
+    padding: 4px;
+    padding-top: 10px;
+}
+#about-container{
+    color: #8b0000;
+    background-color: black;
+    text-align: center;
+}
+
+#about-container h1{
+    color: #ffffff;
+    background-color: #8b0000;
+    padding-top: 0px;
+    margin: 0;
+}
+
+#about-container h2{
+    color: #8b0000;
+    padding-top: 10px;  
+}
+
+body #about-container{
+    color: #ffffff;
+    text-align: center;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#contact-container{
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+h2{
+    font-size: 20px;
+    color:#8b0000;
+    background-color: #000000;
+    text-align: center;
+    padding-top: 10px;      
+}
+
+p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a{
+    color: darkgrey;
+}
+
+a:hover{
+    color: #8b0000;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+input, textarea{
+    margin-bottom: 15px;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: #888;
+    text-align: center;
+}
+
+input[type="submit"]{
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: auto;
+}
+
+input[type="submit"]:hover{
+    background-color: #ff0000;
+    transition: 0.3s ease;
+}
+
+ul{
+    font-size: 16px;
+    color: #ffffff;
+    margin: 20px;
+}
+
+ul a{
+    color: grey;
+}
+
+ul a:hover{
+    color: #8b0000;
+    text-decoration: underline;
+}
+
+#references-container{
+    flex: 1;
+}
+
+#references-container p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #8b0000;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    #references-container {
+        padding: 10px;
+    }
+}
+
+#footer{
+    width: 100%;
+    background-color: #333;
+    color: #ffffff;
+    text-align: left;
+    padding-top: 4px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#footer table caption{
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+}
+
+#footer table{
+    width: 100%;
+    border-collapse: separate;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding:20px;
+    table-layout: fixed;
+
+}
+ #footer td{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+ #footer td a{ 
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    box-shadow: 0 0 25px 10px #ff000080;
+    color: #ffffff;
+    background-color: #ff000080;
+    text-shadow: #000000;
+    transition: 1s;
+    text-decoration: underline;
+}
